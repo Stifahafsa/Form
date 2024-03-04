@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title> Formulaire d'inscription </title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="formstyle.css">
+    </head>
+  <body>
+
+    <form name="traitement" method="post">
+      <table border="1">
+        <tr>
+          <td><label for="nom"> Nom </label></td>
+          <td><input type="text" id="nom" name="nom" size="30"></td>
+        </tr>
+        <tr>
+          <td><label for="Prénom"> Prénom </label></td>
+          <td><input type="text" id="Prénom" name="Prénom" size="30"></td>
+        </tr>
+        <tr>
+          <td><label for="sexe">Sexe</label></td>
+          <td>
+            <input type="radio" name="sexe" id="homme" value="homme">Homme 
+            <input type="radio" name="sexe" id="femme" value="femme">femme 
+          </td>
+        </tr>
+        <tr>
+          <td><label for="date"> Date de naissance</label></td>
+          <td><input type="date" name="date" id="date"></td>
+        </tr>
+        
+        <tr>
+          <td><label for="niveau">Niveau d'etudes</label></td>
+          <td>
+            <select name="niveau" id="niveau">
+              <option value="Collège">3<sup>ème</sup>annee College</option>
+              <option value="NivBac">1<sup>ème</sup>annee baccalureat</option>
+              <option value="Bac">2<sup>ème</sup>annee baccalureat</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="specialite">Spécialité</label></td>
+          <td>
+            <input list="specialite" id="specialite" name="specialite">
+            <datalist>
+              <option value="SVT">SVT</option>
+              <option value="SPC">SPC</option>
+              <option value="SMP">SMP</option>
+            </datalist> 
+          </td>
+        </tr>
+        <tr>
+          <td><label>Téléphone</label></td>
+          <td><input type="tel" required></td>
+        </tr>
+        <tr>
+          <td><label>Email</label></td>
+          <td><input type="email" required></td>
+        </tr>
+        <tr>
+          <td><label>Site web personnel</label></td>
+          <td><input type="url"></td>
+        </tr>
+        <tr>
+          <td><label for="adresse">Adresse</label></td>
+          <td><textarea id="adresse" name="adresse" rows="3"></textarea></td>
+        </tr>
+        <tr>
+          <td><label>Photo</label></td>
+          <td><input type="file"></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Envoyer vos informations"></td>
+        </tr>
+      </table>
+    </form>
+    <fieldset style="width: fit-content;">
+      <legend>Authentification</legend>
+      <input type="text" id="Nom d'utilisateur" placeholder="Nom d'utilisateur" name="Nom d'utilisateur" required>
+      <br><br>
+      <input type="password" id="password" placeholder="password" name="password" required>
+      <br><br>
+      <button type="reset">Rénitialiser</button>
+      <button type="submit">Validé</button>
+
+    </fieldset>
+  </body>
+</html>    

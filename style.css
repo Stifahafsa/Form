@@ -1,0 +1,62 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+table{
+    background-color: lightblue;
+    padding: 20px 30px;
+    border: 3px solid gold;
+    border-top-right-radius: 10%;
+}
+input{
+    padding: 5px 10px;
+}
+label{
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+input[type="date"]{
+    width: 252px;
+}
+select{
+    padding: 7px 10px;
+    width: 252px ;
+}
+th{
+    text-align: left;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-bottom: 2px solid red;
+    color: blue;
+}
+fieldset{
+    border-color: blue;
+    background: linear-gradient(to bottom, lightblue,rgb(76, 161, 194));
+    border-radius: 50px;
+    -webkit-border-radius:50px;
+    -moz-border-radius:50px;
+    -ms-border-radius:50px;
+    -o-border-radius:50px;
+}
+}
+fieldset legend{
+    padding-left:50px ;
+}
+fieldset form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 10px;
+    padding: 0px 20px;
+}
+fieldset form input {
+    border-radius: 30px;
+    background-color: rgba(255, 255, 0, 0.735);
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+button {
+    padding: 5px 10px;
+}
